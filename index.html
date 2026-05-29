@@ -6,37 +6,37 @@
   <title>The Cost of Beauty | Bird of Paradise Feathers</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,400;1,600&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:           #04060f;
-      --bg2:          #070b18;
-      --bg3:          #090d1c;
-      --purple:       #7c3aed;
-      --purple-lt:    #a78bfa;
-      --cyan:         #06b6d4;
-      --gold:         #f59e0b;
-      --green:        #10b981;
-      --green-lt:     #34d399;
-      --magenta:      #ec4899;
-      --text:         #f1f5f9;
-      --muted:        #94a3b8;
-      --border:       rgba(255,255,255,0.07);
+      --bg:        #04060f;
+      --bg2:       #070b18;
+      --bg3:       #090d1c;
+      --purple:    #7c3aed;
+      --purple-lt: #a78bfa;
+      --cyan:      #06b6d4;
+      --gold:      #f59e0b;
+      --green:     #10b981;
+      --green-lt:  #34d399;
+      --magenta:   #ec4899;
+      --text:      #f1f5f9;
+      --muted:     #94a3b8;
+      --border:    rgba(255,255,255,0.07);
     }
 
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Nunito', sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.7;
       overflow-x: hidden;
     }
 
-    /* ── NAV ──────────────────────────────────── */
+    /* ── NAV ─────────────────────────────── */
     nav {
       position: fixed;
       top: 0;
@@ -59,7 +59,7 @@
     }
 
     .nav-logo {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Lora', serif;
       font-style: italic;
       font-size: 1.05rem;
       color: var(--purple-lt);
@@ -77,11 +77,11 @@
       display: block;
       padding: 0.38rem 0.85rem;
       font-size: 0.8rem;
-      font-weight: 500;
+      font-weight: 600;
       color: var(--muted);
       text-decoration: none;
       border-radius: 6px;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.01em;
       transition: all 0.2s;
     }
 
@@ -91,7 +91,7 @@
       background: rgba(124,58,237,0.14);
     }
 
-    /* ── SHARED ───────────────────────────────── */
+    /* ── SHARED ──────────────────────────── */
     section {
       min-height: 100vh;
       padding: 7rem 2rem 5rem;
@@ -103,7 +103,7 @@
     .section-label {
       display: inline-block;
       font-size: 0.7rem;
-      font-weight: 700;
+      font-weight: 800;
       letter-spacing: 0.15em;
       text-transform: uppercase;
       color: var(--purple-lt);
@@ -115,7 +115,7 @@
     }
 
     h2 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Lora', serif;
       font-size: clamp(2rem, 5vw, 3rem);
       line-height: 1.15;
       margin-bottom: 1.25rem;
@@ -124,7 +124,6 @@
     p { color: var(--muted); font-size: 0.97rem; margin-bottom: 1rem; }
     p strong { color: var(--text); }
 
-    /* Divider line at top of alternating sections */
     .top-rule::before {
       content: '';
       position: absolute;
@@ -150,15 +149,15 @@
     .d4 { transition-delay: 0.4s; }
 
 
-    /* ══════════════════════════════════════════
+    /* ══════════════════════════════════
        § 1  HOME
-    ══════════════════════════════════════════ */
+    ══════════════════════════════════ */
     #home {
       display: flex;
       align-items: center;
       background:
-        radial-gradient(ellipse 90% 55% at 50% -5%,  rgba(124,58,237,0.38) 0%, transparent 65%),
-        radial-gradient(ellipse 50% 40% at 85% 95%,  rgba(6,182,212,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 90% 55% at 50% -5%, rgba(124,58,237,0.38) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 40% at 85% 95%, rgba(6,182,212,0.18) 0%, transparent 60%),
         var(--bg);
       overflow: hidden;
     }
@@ -167,13 +166,13 @@
       content: '';
       position: absolute;
       inset: 0;
-      background-image: radial-gradient(rgba(255,255,255,0.025) 1px, transparent 1px);
+      background-image: radial-gradient(rgba(255,255,255,0.022) 1px, transparent 1px);
       background-size: 40px 40px;
       pointer-events: none;
     }
 
     .hero-content {
-      max-width: 720px;
+      max-width: 620px;
       position: relative;
       z-index: 1;
     }
@@ -183,7 +182,7 @@
       align-items: center;
       gap: 0.75rem;
       font-size: 0.76rem;
-      font-weight: 600;
+      font-weight: 700;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--cyan);
@@ -197,9 +196,9 @@
     }
 
     h1.hero-title {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Lora', serif;
       font-size: clamp(3rem, 9vw, 5.8rem);
-      font-weight: 900;
+      font-weight: 700;
       line-height: 1.05;
       color: #fff;
       margin-bottom: 1.5rem;
@@ -213,9 +212,9 @@
     }
 
     .hero-question {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Lora', serif;
       font-style: italic;
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       color: var(--text);
       border-left: 3px solid var(--purple);
       background: rgba(255,255,255,0.03);
@@ -237,6 +236,7 @@
       align-items: center;
       gap: 0.6rem;
       font-size: 0.82rem;
+      font-weight: 700;
       color: var(--muted);
       text-decoration: none;
       border: 1px solid var(--border);
@@ -252,20 +252,31 @@
       50%      { transform: translateY(4px); }
     }
 
-    /* Decorative feather */
-    .deco-feather {
+    /* Hero bird photo */
+    .hero-photo {
       position: absolute;
-      right: -4%;
-      top: 50%;
-      transform: translateY(-50%);
-      opacity: 0.055;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 46%;
+      overflow: hidden;
       pointer-events: none;
     }
 
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      opacity: 0.45;
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 35%);
+      mask-image: linear-gradient(to right, transparent 0%, black 35%);
+    }
 
-    /* ══════════════════════════════════════════
+
+    /* ══════════════════════════════════
        § 2  GENES
-    ══════════════════════════════════════════ */
+    ══════════════════════════════════ */
     #genes { background: var(--bg2); }
 
     .gene-grid {
@@ -297,11 +308,20 @@
     .card.v-gold::before    { background: linear-gradient(90deg,var(--gold),#fbbf24); }
     .card.v-magenta::before { background: linear-gradient(90deg,var(--magenta),#f472b6); }
 
-    .card-icon { font-size: 1.85rem; display: block; margin-bottom: 0.9rem; }
+    .card-icon {
+      display: block;
+      width: 38px;
+      height: 38px;
+      margin-bottom: 1rem;
+    }
+    .card.v-purple .card-icon { color: var(--purple-lt); }
+    .card.v-cyan   .card-icon { color: var(--cyan); }
+    .card.v-gold   .card-icon { color: var(--gold); }
+    .card.v-magenta .card-icon { color: var(--magenta); }
 
     .card-label {
       font-size: 0.7rem;
-      font-weight: 700;
+      font-weight: 800;
       letter-spacing: 0.13em;
       text-transform: uppercase;
       color: var(--muted);
@@ -321,7 +341,7 @@
 
     .pathway-box .label {
       font-size: 0.7rem;
-      font-weight: 700;
+      font-weight: 800;
       letter-spacing: 0.13em;
       text-transform: uppercase;
       color: var(--cyan);
@@ -342,7 +362,7 @@
       border: 1px solid rgba(6,182,212,0.22);
       border-radius: 7px;
       font-size: 0.8rem;
-      font-weight: 500;
+      font-weight: 600;
       color: var(--text);
       white-space: nowrap;
     }
@@ -360,12 +380,18 @@
       border-radius: 14px;
     }
 
-    .banner-icon { font-size: 2.2rem; flex-shrink: 0; }
+    .banner-icon {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      color: var(--purple-lt);
+      margin-top: 0.1rem;
+    }
 
     .banner h3 {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Nunito', sans-serif;
       font-size: 1rem;
-      font-weight: 700;
+      font-weight: 800;
       color: var(--purple-lt);
       margin-bottom: 0.4rem;
     }
@@ -373,9 +399,9 @@
     .banner p { font-size: 0.9rem; margin: 0; }
 
 
-    /* ══════════════════════════════════════════
+    /* ══════════════════════════════════
        § 3  MODEL (FLOWCHART)
-    ══════════════════════════════════════════ */
+    ══════════════════════════════════ */
     #model { background: var(--bg3); }
 
     .model-intro { max-width: 680px; margin-bottom: 2.75rem; }
@@ -387,7 +413,6 @@
       background: rgba(255,255,255,0.012);
     }
 
-    /* Column headers */
     .fc-head {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -398,7 +423,7 @@
       padding: 1.1rem 1.75rem;
       text-align: center;
       font-size: 0.82rem;
-      font-weight: 700;
+      font-weight: 800;
       letter-spacing: 0.09em;
       text-transform: uppercase;
     }
@@ -414,7 +439,6 @@
       color: var(--magenta);
     }
 
-    /* Columns */
     .fc-body {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -429,14 +453,13 @@
 
     .fcc.green { border-right: 1px solid var(--border); }
 
-    /* Steps */
     .fstep {
       width: 100%;
       text-align: center;
       padding: 0.95rem 1.1rem;
       border-radius: 11px;
       font-size: 0.88rem;
-      font-weight: 500;
+      font-weight: 600;
       line-height: 1.4;
     }
 
@@ -448,14 +471,12 @@
       margin-top: 0.25rem;
     }
 
-    /* DNA row – shared colour */
     .fstep.dna {
       background: rgba(99,102,241,0.11);
       border: 1px solid rgba(99,102,241,0.32);
       color: #c7d2fe;
     }
 
-    /* green column steps */
     .fcc.green .fstep.protein {
       background: rgba(16,185,129,0.09);
       border: 1px solid rgba(16,185,129,0.28);
@@ -485,7 +506,6 @@
       font-weight: 700;
     }
 
-    /* pink column steps */
     .fcc.pink .fstep.protein {
       background: rgba(236,72,153,0.09);
       border: 1px solid rgba(236,72,153,0.28);
@@ -515,7 +535,6 @@
       font-weight: 700;
     }
 
-    /* Arrow connector */
     .farrow {
       display: flex;
       flex-direction: column;
@@ -539,7 +558,7 @@
 
     .farrow-tag {
       font-size: 0.63rem;
-      font-weight: 700;
+      font-weight: 800;
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: rgba(255,255,255,0.35);
@@ -555,9 +574,9 @@
     .fcc.pink  .farrow-tag { color: rgba(236,72,153,0.55);  border-color: rgba(236,72,153,0.15); }
 
 
-    /* ══════════════════════════════════════════
+    /* ══════════════════════════════════
        § 4  EVOLUTION
-    ══════════════════════════════════════════ */
+    ══════════════════════════════════ */
     #evolution { background: var(--bg2); }
 
     .evo-grid {
@@ -577,8 +596,8 @@
     .evo-card:hover { border-color: rgba(245,158,11,0.3); }
 
     .evo-num {
-      font-family: 'Playfair Display', serif;
-      font-weight: 900;
+      font-family: 'Lora', serif;
+      font-weight: 700;
       font-size: 2.4rem;
       color: rgba(245,158,11,0.2);
       line-height: 1;
@@ -586,9 +605,9 @@
     }
 
     .evo-card h3 {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Nunito', sans-serif;
       font-size: 0.97rem;
-      font-weight: 700;
+      font-weight: 800;
       color: var(--gold);
       margin-bottom: 0.55rem;
     }
@@ -606,7 +625,7 @@
     .runaway > span {
       display: block;
       font-size: 0.7rem;
-      font-weight: 700;
+      font-weight: 800;
       letter-spacing: 0.13em;
       text-transform: uppercase;
       color: var(--gold);
@@ -628,7 +647,7 @@
       border: 1px solid rgba(245,158,11,0.26);
       border-radius: 10px;
       font-size: 0.82rem;
-      font-weight: 500;
+      font-weight: 600;
       color: var(--text);
       text-align: center;
       flex: 1;
@@ -638,9 +657,9 @@
     .carrow { color: var(--gold); font-size: 1.1rem; flex-shrink: 0; }
 
 
-    /* ══════════════════════════════════════════
+    /* ══════════════════════════════════
        § 5  CONCLUSION
-    ══════════════════════════════════════════ */
+    ══════════════════════════════════ */
     #conclusion { background: var(--bg3); }
 
     .answer-block {
@@ -657,7 +676,7 @@
       content: '"';
       position: absolute;
       top: -30px; left: 18px;
-      font-family: 'Playfair Display', serif;
+      font-family: 'Lora', serif;
       font-size: 14rem;
       line-height: 1;
       color: rgba(124,58,237,0.09);
@@ -667,7 +686,7 @@
     .answer-block p {
       position: relative;
       z-index: 1;
-      font-family: 'Playfair Display', serif;
+      font-family: 'Lora', serif;
       font-style: italic;
       font-size: 1.1rem;
       color: var(--text);
@@ -689,12 +708,26 @@
       text-align: center;
     }
 
-    .tk-icon { font-size: 1.9rem; display: block; margin-bottom: 0.75rem; }
+    .tk-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      font-family: 'Lora', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.85rem;
+    }
+    .tk:nth-child(1) .tk-badge { background: rgba(167,139,250,0.12); border: 1px solid rgba(167,139,250,0.28); color: var(--purple-lt); }
+    .tk:nth-child(2) .tk-badge { background: rgba(245,158,11,0.12);  border: 1px solid rgba(245,158,11,0.28);  color: var(--gold); }
+    .tk:nth-child(3) .tk-badge { background: rgba(6,182,212,0.12);   border: 1px solid rgba(6,182,212,0.28);   color: var(--cyan); }
 
     .tk h3 {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Nunito', sans-serif;
       font-size: 0.88rem;
-      font-weight: 700;
+      font-weight: 800;
       color: var(--purple-lt);
       margin-bottom: 0.45rem;
     }
@@ -702,9 +735,9 @@
     .tk p { font-size: 0.84rem; margin: 0; }
 
 
-    /* ══════════════════════════════════════════
+    /* ══════════════════════════════════
        § 6  SOURCES
-    ══════════════════════════════════════════ */
+    ══════════════════════════════════ */
     #sources {
       background: var(--bg);
       min-height: auto;
@@ -740,13 +773,13 @@
 
     .cnum {
       font-size: 0.74rem;
-      font-weight: 700;
+      font-weight: 800;
       color: var(--purple-lt);
       margin-right: 0.45rem;
       font-variant-numeric: tabular-nums;
     }
 
-    /* ── FOOTER ───────────────────────────────── */
+    /* ── FOOTER ──────────────────────── */
     footer {
       text-align: center;
       padding: 2.5rem;
@@ -754,16 +787,15 @@
       font-size: 0.8rem;
       color: var(--muted);
     }
-
     footer span { color: var(--purple-lt); }
 
-    /* ── RESPONSIVE ───────────────────────────── */
+    /* ── RESPONSIVE ──────────────────── */
     @media (max-width: 768px) {
       .gene-grid, .evo-grid, .takeaways { grid-template-columns: 1fr; }
       .fc-head, .fc-body { grid-template-columns: 1fr; }
       .fcc.green { border-right: none; border-bottom: 1px solid var(--border); }
       .fch.green { border-right: none; border-bottom: 1px solid var(--border); }
-      .deco-feather { display: none; }
+      .hero-photo { display: none; }
       .nav-links { display: none; }
       .answer-block { padding: 1.75rem; }
       .cycle { flex-direction: column; }
@@ -778,7 +810,7 @@
 </head>
 <body>
 
-<!-- ═══════════ NAV ═══════════ -->
+<!-- ═══════ NAV ═══════ -->
 <nav>
   <div class="nav-inner">
     <a href="#home" class="nav-logo">Bird of Paradise</a>
@@ -794,36 +826,17 @@
 </nav>
 
 
-<!-- ═══════════ § 1 · HOME ═══════════ -->
+<!-- ═══════ § 1 · HOME ═══════ -->
 <section id="home">
 
-  <!-- Decorative feather SVG -->
-  <svg class="deco-feather" width="480" height="560" viewBox="0 0 480 560" fill="none" aria-hidden="true">
-    <!-- shaft -->
-    <line x1="240" y1="30" x2="240" y2="530" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-    <!-- barbs left -->
-    <path d="M240 90  Q195 115 160 135" stroke="white" stroke-width="1.2" fill="none" opacity=".9"/>
-    <path d="M240 130 Q188 158 148 180" stroke="white" stroke-width="1.2" fill="none" opacity=".85"/>
-    <path d="M240 170 Q182 200 136 225" stroke="white" stroke-width="1.2" fill="none" opacity=".8"/>
-    <path d="M240 210 Q178 243 126 270" stroke="white" stroke-width="1.2" fill="none" opacity=".75"/>
-    <path d="M240 250 Q176 286 120 316" stroke="white" stroke-width="1.2" fill="none" opacity=".7"/>
-    <path d="M240 290 Q178 328 126 360" stroke="white" stroke-width="1.2" fill="none" opacity=".6"/>
-    <path d="M240 330 Q185 367 148 396" stroke="white" stroke-width="1.2" fill="none" opacity=".5"/>
-    <path d="M240 370 Q195 404 165 428" stroke="white" stroke-width="1.2" fill="none" opacity=".4"/>
-    <path d="M240 410 Q205 440 185 458" stroke="white" stroke-width="1.2" fill="none" opacity=".3"/>
-    <!-- barbs right -->
-    <path d="M240 90  Q285 115 320 135" stroke="white" stroke-width="1.2" fill="none" opacity=".9"/>
-    <path d="M240 130 Q292 158 332 180" stroke="white" stroke-width="1.2" fill="none" opacity=".85"/>
-    <path d="M240 170 Q298 200 344 225" stroke="white" stroke-width="1.2" fill="none" opacity=".8"/>
-    <path d="M240 210 Q302 243 354 270" stroke="white" stroke-width="1.2" fill="none" opacity=".75"/>
-    <path d="M240 250 Q304 286 360 316" stroke="white" stroke-width="1.2" fill="none" opacity=".7"/>
-    <path d="M240 290 Q302 328 354 360" stroke="white" stroke-width="1.2" fill="none" opacity=".6"/>
-    <path d="M240 330 Q295 367 332 396" stroke="white" stroke-width="1.2" fill="none" opacity=".5"/>
-    <path d="M240 370 Q285 404 315 428" stroke="white" stroke-width="1.2" fill="none" opacity=".4"/>
-    <path d="M240 410 Q275 440 295 458" stroke="white" stroke-width="1.2" fill="none" opacity=".3"/>
-    <!-- tip -->
-    <ellipse cx="240" cy="48" rx="14" ry="24" fill="white" opacity=".9"/>
-  </svg>
+  <!-- Real bird photo fading in from the right -->
+  <figure class="hero-photo" aria-hidden="true">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Paradisaea_minor.jpg/800px-Paradisaea_minor.jpg"
+      alt="Male Lesser Bird of Paradise displaying its bright yellow and white plumage"
+      loading="eager"
+      onerror="this.parentElement.style.display='none'">
+  </figure>
 
   <div class="container">
     <div class="hero-content">
@@ -838,13 +851,11 @@
       </blockquote>
 
       <p class="hero-desc reveal d3">
-        The Bird of Paradise sports feathers so extravagant they attract predators and drain
-        energy. Yet generation after generation the trait persists — and spreads. The answer
-        lies at the intersection of genetics, molecular biology, and evolution.
+        The Bird of Paradise has some of the most extreme feathers of any animal on Earth. The males are super colorful and flashy — which actually puts them at risk. So how did these over-the-top feathers ever evolve? The answer starts with one gene.
       </p>
 
       <a href="#genes" class="hero-cta reveal d4">
-        Begin exploring
+        Start reading
         <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
           <path d="M6.5 1.5v10M2.5 7.5l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
@@ -854,63 +865,99 @@
 </section>
 
 
-<!-- ═══════════ § 2 · GENES ═══════════ -->
+<!-- ═══════ § 2 · GENES ═══════ -->
 <section id="genes" class="top-rule purple">
   <div class="container">
 
     <div class="reveal">
       <span class="section-label">Section 02 — Genetics</span>
       <h2>The MC1R Gene</h2>
-      <p>At the heart of Bird of Paradise coloration is a single stretch of DNA that controls how cells produce pigment. Understanding what this gene normally does — and what happens when it changes — reveals how dazzling feathers are built at the molecular level.</p>
+      <p>One gene called <strong>MC1R</strong> controls how pigment (color) gets made in feathers. When that gene mutates — meaning one small part of the DNA code changes — it changes the protein it codes for. And that changes the color of the feathers.</p>
     </div>
 
     <div class="gene-grid">
+
+      <!-- Card 1 -->
       <div class="card v-purple reveal d1">
-        <span class="card-icon">🧬</span>
+        <!-- DNA double helix icon -->
+        <svg class="card-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 5C12 5 26 10 26 19C26 28 12 33 12 33" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M26 5C26 5 12 10 12 19C12 28 26 33 26 33" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="12" y1="12" x2="26" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="12" y1="19" x2="26" y2="19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="12" y1="26" x2="26" y2="26" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
         <span class="card-label">What is MC1R?</span>
-        <p>The <strong>Melanocortin-1 Receptor (MC1R)</strong> gene encodes a receptor protein on the surface of melanocytes — the specialized cells responsible for producing pigment in skin, fur, and feathers across vertebrates.</p>
+        <p>The <strong>MC1R gene</strong> makes instructions for a protein called the MC1R receptor. This receptor sits on pigment cells in the feathers. Its main job is to control what color pigment gets made and where it goes.</p>
       </div>
+
+      <!-- Card 2 -->
       <div class="card v-cyan reveal d2">
-        <span class="card-icon">⚙️</span>
+        <!-- Gear/settings icon -->
+        <svg class="card-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="19" cy="19" r="5.5" stroke="currentColor" stroke-width="2.2"/>
+          <path d="M19 5v4M19 29v4M5 19h4M29 19h4M8.8 8.8l2.8 2.8M26.4 26.4l2.8 2.8M8.8 29.2l2.8-2.8M26.4 11.6l2.8-2.8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
         <span class="card-label">Normal Function</span>
-        <p>When the hormone <strong>α-MSH</strong> (alpha-melanocyte stimulating hormone) binds to the MC1R protein, it triggers a signaling cascade that raises intracellular cAMP, activating enzymes that synthesize <strong>eumelanin</strong> (dark brown/black pigment).</p>
+        <p>Normally, the MC1R protein acts like an on/off switch for dark pigment (called <strong>melanin</strong>). When the switch is on, more dark melanin gets made. When it's off, the feathers stay lighter or more brownish.</p>
       </div>
+
+      <!-- Card 3 -->
       <div class="card v-gold reveal d1">
-        <span class="card-icon">🔄</span>
-        <span class="card-label">The Pigment Switch</span>
-        <p>MC1R acts as a <strong>molecular switch</strong>: high receptor activity → more eumelanin (dark coloration); low activity → more phaeomelanin (yellow/reddish pigment). The balance between these two pigments determines base coat color across species.</p>
+        <!-- Toggle/switch icon -->
+        <svg class="card-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="13" width="30" height="12" rx="6" stroke="currentColor" stroke-width="2.2"/>
+          <circle cx="28" cy="19" r="4" fill="currentColor"/>
+          <circle cx="12" cy="19" r="2.5" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.5"/>
+        </svg>
+        <span class="card-label">The Color Control</span>
+        <p>Melanin is the pigment that gives feathers their color. The MC1R protein controls how much melanin gets deposited in each feather and where it goes. More melanin in the right places makes darker or more vibrant colors.</p>
       </div>
+
+      <!-- Card 4 -->
       <div class="card v-magenta reveal d2">
-        <span class="card-icon">🔬</span>
+        <!-- Broken/changed DNA icon -->
+        <svg class="card-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 5C12 5 26 10 26 19" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M26 19C26 28 12 33 12 33" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="4 3"/>
+          <path d="M26 5C26 5 12 10 12 19" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M12 19C12 28 26 33 26 33" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="4 3"/>
+          <line x1="12" y1="12" x2="26" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="30" cy="9" r="4" fill="currentColor" opacity="0.9"/>
+          <path d="M28.5 9h3M30 7.5v3" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
         <span class="card-label">When MC1R Mutates</span>
-        <p>Mutations alter the shape of the MC1R receptor, changing its response to α-MSH. In Birds of Paradise, these mutations redirect how melanin granules are deposited, creating the precisely spaced <strong>nanostructures</strong> that produce structural iridescence.</p>
+        <p>A <strong>point mutation</strong> is when one single base pair in the DNA code changes. When that happens in MC1R, it changes the shape of the MC1R protein. A different-shaped protein works differently — and that changes how color gets deposited in the feathers.</p>
       </div>
+
     </div>
 
     <div class="pathway-box reveal d2">
-      <span class="label">Normal MC1R Signaling Pathway</span>
+      <span class="label">How the MC1R Gene Works — Step by Step</span>
       <div class="pathway-steps">
-        <span class="pstep">α-MSH hormone</span>
+        <span class="pstep">MC1R Gene (DNA)</span>
         <span class="parrow">→</span>
-        <span class="pstep">Binds MC1R</span>
+        <span class="pstep">Transcription (mRNA made)</span>
         <span class="parrow">→</span>
-        <span class="pstep">↑ cAMP</span>
+        <span class="pstep">Translation (protein made)</span>
         <span class="parrow">→</span>
-        <span class="pstep">PKA activated</span>
+        <span class="pstep">Protein controls melanin</span>
         <span class="parrow">→</span>
-        <span class="pstep">MITF phosphorylated</span>
-        <span class="parrow">→</span>
-        <span class="pstep">Tyrosinase ↑</span>
-        <span class="parrow">→</span>
-        <span class="pstep">Eumelanin synthesized</span>
+        <span class="pstep">Feather color set</span>
       </div>
     </div>
 
     <div class="banner reveal d3">
-      <div class="banner-icon">✨</div>
+      <!-- Lightbulb icon -->
+      <svg class="banner-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 7C14.48 7 10 11.48 10 17c0 3.86 2.07 7.23 5.14 9.09L15 29h10l-.14-2.91C28.07 24.23 30 20.86 30 17c0-5.52-4.48-10-10-10z" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linejoin="round"/>
+        <path d="M16 29v2a4 4 0 008 0v-2" stroke="currentColor" stroke-width="2.2" fill="none"/>
+        <line x1="16" y1="29" x2="24" y2="29" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="20" y1="11" x2="20" y2="14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity="0.5"/>
+      </svg>
       <div>
-        <h3>Structural Color in Birds of Paradise</h3>
-        <p>Beyond pigment, Birds of Paradise possess feather barbules with precisely arranged melanin nanostructures that act as <strong>photonic crystals</strong> — interfering with light waves to produce the vivid iridescent blues, greens, and golds we observe. MC1R pathway mutations alter the deposition spacing of these granules, and therefore which wavelengths of light are reflected.</p>
+        <h3>Why Are Bird of Paradise Feathers So Bright?</h3>
+        <p>When the MC1R protein changes shape because of a mutation, it changes how melanin pigment gets laid down inside each feather. The new arrangement causes light to bounce off differently, creating those intense, shimmery colors the Bird of Paradise is famous for. It's basically like the mutation accidentally rearranged the pigment in a way that produces a much brighter, more colorful result.</p>
       </div>
     </div>
 
@@ -918,33 +965,31 @@
 </section>
 
 
-<!-- ═══════════ § 3 · MODEL ═══════════ -->
+<!-- ═══════ § 3 · MODEL ═══════ -->
 <section id="model" class="top-rule cyan">
   <div class="container">
 
     <div class="reveal model-intro">
       <span class="section-label">Section 03 — Molecular Model</span>
       <h2>DNA to Feathers: Two Paths</h2>
-      <p>This model traces gene expression from DNA to reproductive outcome for a bird carrying the <strong>normal MC1R allele</strong> versus one carrying a <strong>mutation</strong> — showing how a molecular change cascades into a very different evolutionary result.</p>
+      <p>This flowchart compares what happens — step by step — when a bird has the <strong>normal MC1R gene</strong> versus when it has a <strong>mutation</strong>. The same basic process, but a totally different outcome.</p>
     </div>
 
     <div class="fc-wrap reveal">
 
-      <!-- Header row -->
       <div class="fc-head">
-        <div class="fch green">● No Mutation — Normal MC1R Allele</div>
-        <div class="fch pink">● With Mutation — Altered MC1R Allele</div>
+        <div class="fch green">● No Mutation — Normal MC1R Gene</div>
+        <div class="fch pink">● With Mutation — Changed MC1R Gene</div>
       </div>
 
-      <!-- Two columns -->
       <div class="fc-body">
 
-        <!-- ── NO MUTATION ── -->
+        <!-- NO MUTATION -->
         <div class="fcc green">
 
           <div class="fstep dna">
             <strong>DNA</strong>
-            <span class="sub">Normal MC1R coding sequence<br>Wildtype nucleotide bases</span>
+            <span class="sub">Normal MC1R gene<br>No changes to the code</span>
           </div>
 
           <div class="farrow">
@@ -955,7 +1000,7 @@
 
           <div class="fstep protein">
             <strong>Normal MC1R Protein</strong>
-            <span class="sub">Correct 3-D receptor shape<br>Active α-MSH binding domain</span>
+            <span class="sub">Correct protein shape<br>Works the way it's supposed to</span>
           </div>
 
           <div class="farrow">
@@ -965,8 +1010,8 @@
           </div>
 
           <div class="fstep func">
-            <strong>Balanced Melanin Production</strong>
-            <span class="sub">Normal eumelanin / phaeomelanin ratio<br>Standard granule distribution in barbules</span>
+            <strong>Normal Melanin Deposited</strong>
+            <span class="sub">Regular amount of color pigment<br>Spread out evenly in feathers</span>
           </div>
 
           <div class="farrow">
@@ -976,7 +1021,7 @@
 
           <div class="fstep trait">
             Dull Brown / Green Feathers
-            <span class="sub">Low iridescence — effective camouflage</span>
+            <span class="sub">Blends in — good for hiding</span>
           </div>
 
           <div class="farrow">
@@ -986,8 +1031,8 @@
           </div>
 
           <div class="fstep sel">
-            <strong>Good Camouflage, Moderate Mate Appeal</strong>
-            <span class="sub">Lower predation risk<br>Average female preference</span>
+            <strong>Hard to Spot, Average Mate Appeal</strong>
+            <span class="sub">Predators can't see him easily<br>Females don't prefer him over others</span>
           </div>
 
           <div class="farrow">
@@ -996,18 +1041,18 @@
           </div>
 
           <div class="fstep outcome">
-            Average Reproductive Success
-            <span class="sub">Alleles passed on at baseline rate</span>
+            Average Number of Offspring
+            <span class="sub">Gene stays in the population at normal levels</span>
           </div>
 
-        </div><!-- /green col -->
+        </div>
 
-        <!-- ── WITH MUTATION ── -->
+        <!-- WITH MUTATION -->
         <div class="fcc pink">
 
           <div class="fstep dna">
             <strong>DNA</strong>
-            <span class="sub">Mutant MC1R coding sequence<br>One or more nucleotide changes</span>
+            <span class="sub">Mutated MC1R gene<br>One base pair has changed</span>
           </div>
 
           <div class="farrow">
@@ -1018,7 +1063,7 @@
 
           <div class="fstep protein">
             <strong>Altered MC1R Protein</strong>
-            <span class="sub">Modified amino acid sequence<br>Changed receptor sensitivity</span>
+            <span class="sub">Different protein shape<br>Works differently now</span>
           </div>
 
           <div class="farrow">
@@ -1028,8 +1073,8 @@
           </div>
 
           <div class="fstep func">
-            <strong>Shifted Melanin Deposition</strong>
-            <span class="sub">Altered eumelanin patterning<br>Modified photonic nanostructure spacing</span>
+            <strong>Melanin Deposited Differently</strong>
+            <span class="sub">Pigment laid down in a new pattern<br>Creates a much brighter color</span>
           </div>
 
           <div class="farrow">
@@ -1039,7 +1084,7 @@
 
           <div class="fstep trait">
             Vivid Iridescent Feathers
-            <span class="sub">Brilliant blues, greens, golds — high visibility</span>
+            <span class="sub">Bright blues, greens, and golds — very visible</span>
           </div>
 
           <div class="farrow">
@@ -1049,8 +1094,8 @@
           </div>
 
           <div class="fstep sel">
-            <strong>↑ Predation Risk + ↑ Female Attraction</strong>
-            <span class="sub">More visible to predators<br>Strong female mate preference</span>
+            <strong>Easy to Spot + Females Love It</strong>
+            <span class="sub">Predators can see him easily<br>But females strongly prefer him</span>
           </div>
 
           <div class="farrow">
@@ -1059,64 +1104,64 @@
           </div>
 
           <div class="fstep outcome">
-            ↑↑ Reproductive Success
+            Way More Offspring
             <span class="sub">Mutation spreads through the population</span>
           </div>
 
-        </div><!-- /pink col -->
+        </div>
 
-      </div><!-- /fc-body -->
-    </div><!-- /fc-wrap -->
+      </div>
+    </div>
 
   </div>
 </section>
 
 
-<!-- ═══════════ § 4 · EVOLUTION ═══════════ -->
+<!-- ═══════ § 4 · EVOLUTION ═══════ -->
 <section id="evolution" class="top-rule gold">
   <div class="container">
 
     <div class="reveal">
       <span class="section-label">Section 04 — Sexual Selection</span>
       <h2>Female Choice Drives the Spread</h2>
-      <p>Natural selection alone would eliminate conspicuous plumage. But evolution has a second engine — <strong>sexual selection</strong> — and in Birds of Paradise, it runs at full power.</p>
+      <p>Even though bright feathers can get a bird eaten, females keep choosing the brightest males. That's why the trait keeps spreading — <strong>more mates = more babies = more birds with the gene</strong>.</p>
     </div>
 
     <div class="evo-grid">
       <div class="evo-card reveal d1">
         <div class="evo-num">01</div>
-        <h3>Intersexual Selection</h3>
-        <p>Females are the choosy sex. Because they invest heavily in egg production and chick care, they are highly selective about mates. Males with the brightest, most elaborate plumage win the most matings — regardless of survival cost.</p>
+        <h3>Female Choice</h3>
+        <p>Females do most of the work when it comes to raising chicks, so they're really picky about who they mate with. They choose the brightest, most colorful males. Because of this, those males end up having way more babies than dull males.</p>
       </div>
       <div class="evo-card reveal d2">
         <div class="evo-num">02</div>
-        <h3>Fisherian Runaway</h3>
-        <p>Once females prefer bright males, a <strong>self-reinforcing cycle</strong> begins. Bright males father sons who inherit the feather genes, and daughters who inherit the preference. Over generations both the trait and the preference amplify far beyond what survival would support.</p>
+        <h3>Bright Genes Spread</h3>
+        <p>When bright males have more babies, their sons inherit the bright-feather gene. Those sons also get more mates. Over many generations, more and more birds in the population end up with bright feathers — because bright birds always have a mating advantage.</p>
       </div>
       <div class="evo-card reveal d1">
         <div class="evo-num">03</div>
-        <h3>Zahavi's Handicap Principle</h3>
-        <p>The cost of bright plumage is not a flaw — it is the point. Only a genuinely healthy, parasite-resistant male can afford to grow vivid feathers while still surviving predators. The trait functions as an <strong>honest advertisement</strong> of genetic quality.</p>
+        <h3>Bright = Strong</h3>
+        <p>Bright feathers are hard to grow — they take a lot of energy and make the bird easier to spot. So if a male has really bright feathers and is still alive, it's a sign he must be pretty strong and healthy. Females can basically use feather brightness as a clue about genetic quality.</p>
       </div>
       <div class="evo-card reveal d2">
         <div class="evo-num">04</div>
-        <h3>Good Genes Hypothesis</h3>
-        <p>Females who choose bright males pass on alleles for both brightness and general fitness to their offspring. Over many generations the population is enriched with genes that improve visual signaling <em>and</em> underlying health — a genetic co-evolution of appearance and quality.</p>
+        <h3>Better Babies</h3>
+        <p>Over many generations, females who picked bright males ended up with healthier chicks. Those chicks also inherited a preference for bright males. So now the preference for bright males is super common too — it's basically an inherited trait just like the feathers themselves.</p>
       </div>
     </div>
 
     <div class="runaway reveal d3">
-      <span>The Runaway Feedback Loop</span>
+      <span>How It Keeps Going — The Feedback Loop</span>
       <div class="cycle">
-        <div class="cstep">Mutation → brighter feathers</div>
+        <div class="cstep">Mutation makes feathers brighter</div>
         <span class="carrow">→</span>
         <div class="cstep">Females prefer bright males</div>
         <span class="carrow">→</span>
         <div class="cstep">Bright males mate more</div>
         <span class="carrow">→</span>
-        <div class="cstep">Bright-feather alleles spread</div>
+        <div class="cstep">Bright-feather gene spreads</div>
         <span class="carrow">→</span>
-        <div class="cstep">Preference intensifies</div>
+        <div class="cstep">Preference gets even stronger</div>
       </div>
     </div>
 
@@ -1124,37 +1169,37 @@
 </section>
 
 
-<!-- ═══════════ § 5 · CONCLUSION ═══════════ -->
+<!-- ═══════ § 5 · CONCLUSION ═══════ -->
 <section id="conclusion" class="top-rule magenta">
   <div class="container">
 
     <div class="reveal">
       <span class="section-label">Section 05 — Conclusion</span>
       <h2>Why the Costly Trait Survives</h2>
-      <p>We began by asking: why would evolution preserve a trait that hurts survival? The biology of Bird of Paradise feathers provides a precise, satisfying answer.</p>
+      <p>We started by asking: why would evolution keep a trait that seems to hurt survival? The Bird of Paradise gives us a pretty clear answer.</p>
     </div>
 
     <div class="answer-block reveal d1">
       <p>
-        A mutation in the <strong>MC1R gene</strong> alters how melanin granules are deposited inside feather barbules, producing iridescent structural color. While this makes males conspicuous to predators, the resulting reproductive advantage — driven by strong female mate preference — more than compensates for the survival cost. Because reproductive success ultimately determines which alleles are passed to the next generation, the mutation spreads even though it shortens individual lifespans. The trait persists not despite its cost, but partly <em>because</em> of it: costliness ensures the signal is honest, and honest signals are exactly what females have co-evolved to select for.
+        The <strong>MC1R gene mutation</strong> changes the shape of a protein that controls melanin (color pigment) in feathers. This gives male Birds of Paradise their bright colors. Yes, those bright feathers make the bird easier for predators to catch — but they also make females way more likely to choose that bird as a mate. Since mating is what actually passes genes to the next generation, the mutation keeps spreading even though it's risky. Basically, when it comes to which genes survive, looking good to females matters more than hiding from predators.
       </p>
     </div>
 
     <div class="takeaways">
       <div class="tk reveal d1">
-        <span class="tk-icon">🧬</span>
-        <h3>Genetic Mechanism</h3>
-        <p>A single gene mutation reshapes protein function and alters nanoscale feather architecture, producing vivid iridescence from a molecular change.</p>
+        <div class="tk-badge">1</div>
+        <h3>One Gene, Big Change</h3>
+        <p>A mutation in one gene (MC1R) changes the protein's shape, which changes how melanin gets deposited, which changes feather color. One small DNA change = a completely different look.</p>
       </div>
       <div class="tk reveal d2">
-        <span class="tk-icon">⚖️</span>
-        <h3>Evolutionary Trade-off</h3>
-        <p>Fitness = survival × reproduction. When reproductive gain exceeds survival loss, selection preserves the costly allele across generations.</p>
+        <div class="tk-badge">2</div>
+        <h3>The Trade-off</h3>
+        <p>The bright feathers cost energy to make and attract predators. But they attract mates even more. So even though there's a cost, there's a bigger benefit — more babies.</p>
       </div>
       <div class="tk reveal d3">
-        <span class="tk-icon">🔗</span>
-        <h3>The Bigger Principle</h3>
-        <p>Sexual selection can push traits far beyond survival optimum. "Harmful" traits can be adaptive when viewed through the lens of total reproductive fitness.</p>
+        <div class="tk-badge">3</div>
+        <h3>Reproduction Wins</h3>
+        <p>Evolution isn't just about surviving — it's about reproducing. If bright feathers help a bird mate more, those genes will spread, even if they shorten that bird's life.</p>
       </div>
     </div>
 
@@ -1162,7 +1207,7 @@
 </section>
 
 
-<!-- ═══════════ § 6 · SOURCES ═══════════ -->
+<!-- ═══════ § 6 · SOURCES ═══════ -->
 <section id="sources" class="top-rule muted">
   <div class="container">
 
@@ -1216,11 +1261,11 @@
 
 
 <script>
-  // ── Active nav link ──
-  const sections  = document.querySelectorAll('section[id]');
+  // Active nav link
+  const sections   = document.querySelectorAll('section[id]');
   const navAnchors = document.querySelectorAll('.nav-links a');
 
-  const navObserver = new IntersectionObserver(entries => {
+  const navObs = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) {
         navAnchors.forEach(a => {
@@ -1230,23 +1275,21 @@
     });
   }, { threshold: 0.35 });
 
-  sections.forEach(s => navObserver.observe(s));
+  sections.forEach(s => navObs.observe(s));
 
-  // ── Scroll reveal ──
-  const reveals = document.querySelectorAll('.reveal');
-
-  const revealObserver = new IntersectionObserver(entries => {
+  // Scroll reveal
+  const revealObs = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) {
         e.target.classList.add('visible');
-        revealObserver.unobserve(e.target);
+        revealObs.unobserve(e.target);
       }
     });
   }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
 
-  reveals.forEach(el => revealObserver.observe(el));
+  document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
 
-  // Hero reveals immediately on load
+  // Hero reveals on load
   document.querySelectorAll('#home .reveal').forEach((el, i) => {
     setTimeout(() => el.classList.add('visible'), 80 + i * 110);
   });
