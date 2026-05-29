@@ -682,77 +682,65 @@
     ══════════════════════════════════ */
     #conclusion { background: var(--bg3); }
 
-    .answer-block {
-      position: relative;
-      overflow: hidden;
-      background: linear-gradient(135deg, rgba(124,58,237,0.09), rgba(236,72,153,0.09));
-      border: 1px solid rgba(124,58,237,0.22);
-      border-radius: 20px;
-      padding: 2.5rem 3rem;
+    .verdict {
       margin: 2.5rem 0 2rem;
+      padding: 1.75rem 2rem;
+      background: rgba(236,72,153,0.06);
+      border-left: 4px solid var(--magenta);
+      border-radius: 0 14px 14px 0;
     }
 
-    .answer-block::before {
-      content: '"';
-      position: absolute;
-      top: -30px; left: 18px;
-      font-family: 'Lora', serif;
-      font-size: 14rem;
-      line-height: 1;
-      color: rgba(124,58,237,0.09);
-      pointer-events: none;
-    }
-
-    .answer-block p {
-      position: relative;
-      z-index: 1;
+    .verdict p {
       font-family: 'Lora', serif;
       font-style: italic;
-      font-size: 1.1rem;
+      font-size: 1.08rem;
       color: var(--text);
       line-height: 1.75;
       margin: 0;
     }
 
-    .takeaways {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.25rem;
+    .key-points {
+      display: flex;
+      flex-direction: column;
     }
 
-    .tk {
-      padding: 1.5rem;
-      border-radius: 14px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,0.02);
-      text-align: center;
+    .kp {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      padding: 1.4rem 0;
+      border-bottom: 1px solid var(--border);
     }
 
-    .tk-badge {
-      display: inline-flex;
+    .kp:last-child { border-bottom: none; }
+
+    .kp-num {
+      flex-shrink: 0;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 8px;
+      display: flex;
       align-items: center;
       justify-content: center;
-      width: 46px;
-      height: 46px;
-      border-radius: 12px;
       font-family: 'Lora', serif;
-      font-size: 1.4rem;
       font-weight: 700;
-      margin-bottom: 0.85rem;
+      font-size: 0.82rem;
+      margin-top: 0.15rem;
     }
-    .tk:nth-child(1) .tk-badge { background: rgba(167,139,250,0.12); border: 1px solid rgba(167,139,250,0.28); color: var(--purple-lt); }
-    .tk:nth-child(2) .tk-badge { background: rgba(245,158,11,0.12);  border: 1px solid rgba(245,158,11,0.28);  color: var(--gold); }
-    .tk:nth-child(3) .tk-badge { background: rgba(6,182,212,0.12);   border: 1px solid rgba(6,182,212,0.28);   color: var(--cyan); }
 
-    .tk h3 {
+    .kp:nth-child(1) .kp-num { background: rgba(167,139,250,0.12); border: 1px solid rgba(167,139,250,0.28); color: var(--purple-lt); }
+    .kp:nth-child(2) .kp-num { background: rgba(245,158,11,0.12);  border: 1px solid rgba(245,158,11,0.28);  color: var(--gold); }
+    .kp:nth-child(3) .kp-num { background: rgba(6,182,212,0.12);   border: 1px solid rgba(6,182,212,0.28);   color: var(--cyan); }
+
+    .kp-body h3 {
       font-family: 'Nunito', sans-serif;
-      font-size: 0.88rem;
+      font-size: 0.97rem;
       font-weight: 800;
-      color: var(--purple-lt);
-      margin-bottom: 0.45rem;
+      color: var(--text);
+      margin-bottom: 0.3rem;
     }
 
-    .tk p { font-size: 0.84rem; margin: 0; }
+    .kp-body p { font-size: 0.9rem; color: var(--muted); margin: 0; }
 
 
     /* ══════════════════════════════════
@@ -811,7 +799,7 @@
 
     /* ── RESPONSIVE ──────────────────── */
     @media (max-width: 768px) {
-      .gene-grid, .takeaways { grid-template-columns: 1fr; }
+      .gene-grid { grid-template-columns: 1fr; }
       .evo-timeline { padding-left: 2.75rem; }
       .evo-timeline::before { left: 0.85rem; }
       .fc-head, .fc-body { grid-template-columns: 1fr; }
@@ -819,7 +807,6 @@
       .fch.green { border-right: none; border-bottom: 1px solid var(--border); }
       .hero-photo { display: none; }
       .nav-links { display: none; }
-      .answer-block { padding: 1.75rem; }
       .cycle { flex-direction: column; }
       .pathway-steps { flex-direction: column; align-items: flex-start; }
     }
@@ -1197,27 +1184,31 @@
       <p>Back to the original question: why would evolution keep a trait that hurts survival? Here's the answer.</p>
     </div>
 
-    <div class="answer-block reveal d1">
-      <p>
-        A mutation in <strong>MC1R</strong> changes the protein shape, which changes how melanin gets deposited, which makes feathers bright. Bright feathers attract predators — but they attract mates even more. Since mating is what passes genes on, the mutation keeps spreading. Looking good to females beats hiding from predators.
-      </p>
+    <div class="verdict reveal d1">
+      <p>A mutation in <strong>MC1R</strong> changes the protein shape, which changes how melanin gets deposited, which makes feathers bright. Bright feathers attract predators — but they attract mates even more. Since mating is what passes genes on, the mutation keeps spreading. Looking good to females beats hiding from predators.</p>
     </div>
 
-    <div class="takeaways">
-      <div class="tk reveal d1">
-        <div class="tk-badge">1</div>
-        <h3>One Gene, Big Change</h3>
-        <p>MC1R mutates → protein changes shape → melanin deposits differently → feathers turn bright. One small DNA change, big result.</p>
+    <div class="key-points">
+      <div class="kp reveal d1">
+        <div class="kp-num">1</div>
+        <div class="kp-body">
+          <h3>One Gene, Big Change</h3>
+          <p>MC1R mutates → protein changes shape → melanin deposits differently → feathers turn bright. One small DNA change, big result.</p>
+        </div>
       </div>
-      <div class="tk reveal d2">
-        <div class="tk-badge">2</div>
-        <h3>The Trade-off</h3>
-        <p>Bright feathers cost energy and attract predators. But they attract mates even more. Bigger benefit wins.</p>
+      <div class="kp reveal d2">
+        <div class="kp-num">2</div>
+        <div class="kp-body">
+          <h3>The Trade-off</h3>
+          <p>Bright feathers cost energy and attract predators. But they attract mates even more. Bigger benefit wins.</p>
+        </div>
       </div>
-      <div class="tk reveal d3">
-        <div class="tk-badge">3</div>
-        <h3>Reproduction Wins</h3>
-        <p>Evolution is about reproducing, not just surviving. More mates = more genes passed on, even at a cost.</p>
+      <div class="kp reveal d3">
+        <div class="kp-num">3</div>
+        <div class="kp-body">
+          <h3>Reproduction Wins</h3>
+          <p>Evolution is about reproducing, not just surviving. More mates = more genes passed on, even at a cost.</p>
+        </div>
       </div>
     </div>
 
