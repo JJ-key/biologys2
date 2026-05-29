@@ -579,40 +579,60 @@
     ══════════════════════════════════ */
     #evolution { background: var(--bg2); }
 
-    .evo-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.25rem;
-      margin-top: 2.5rem;
+    .evo-timeline {
+      position: relative;
+      margin-top: 3rem;
+      padding-left: 3.5rem;
     }
 
-    .evo-card {
-      padding: 1.6rem;
-      border-radius: 16px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,0.02);
-      transition: border-color 0.3s;
+    .evo-timeline::before {
+      content: '';
+      position: absolute;
+      left: 1.08rem;
+      top: 1rem;
+      bottom: 2.5rem;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--gold), rgba(245,158,11,0.08));
     }
-    .evo-card:hover { border-color: rgba(245,158,11,0.3); }
 
-    .evo-num {
+    .evo-step {
+      position: relative;
+      padding: 0 0 2.75rem 1.75rem;
+    }
+
+    .evo-step::before {
+      content: attr(data-num);
+      position: absolute;
+      left: -3.45rem;
+      top: 0.1rem;
+      width: 2.15rem;
+      height: 2.15rem;
+      border-radius: 50%;
+      background: rgba(245,158,11,0.1);
+      border: 2px solid rgba(245,158,11,0.4);
+      color: var(--gold);
       font-family: 'Lora', serif;
+      font-size: 0.78rem;
       font-weight: 700;
-      font-size: 2.4rem;
-      color: rgba(245,158,11,0.2);
-      line-height: 1;
-      margin-bottom: 0.65rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    .evo-card h3 {
+    .evo-step h3 {
       font-family: 'Nunito', sans-serif;
-      font-size: 0.97rem;
+      font-size: 1.05rem;
       font-weight: 800;
       color: var(--gold);
-      margin-bottom: 0.55rem;
+      margin-bottom: 0.4rem;
     }
 
-    .evo-card p { font-size: 0.88rem; margin: 0; }
+    .evo-step p {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin: 0;
+      max-width: 640px;
+    }
 
     .runaway {
       margin-top: 2.5rem;
@@ -791,7 +811,9 @@
 
     /* ── RESPONSIVE ──────────────────── */
     @media (max-width: 768px) {
-      .gene-grid, .evo-grid, .takeaways { grid-template-columns: 1fr; }
+      .gene-grid, .takeaways { grid-template-columns: 1fr; }
+      .evo-timeline { padding-left: 2.75rem; }
+      .evo-timeline::before { left: 0.85rem; }
       .fc-head, .fc-body { grid-template-columns: 1fr; }
       .fcc.green { border-right: none; border-bottom: 1px solid var(--border); }
       .fch.green { border-right: none; border-bottom: 1px solid var(--border); }
@@ -1127,24 +1149,20 @@
       <p>Bright feathers can get a bird eaten — but females keep choosing them anyway. <strong>More mates = more babies = more birds with the gene.</strong></p>
     </div>
 
-    <div class="evo-grid">
-      <div class="evo-card reveal d1">
-        <div class="evo-num">01</div>
+    <div class="evo-timeline">
+      <div class="evo-step reveal d1" data-num="01">
         <h3>Female Choice</h3>
         <p>Females raise the chicks, so they're picky. They pick the brightest males — and those males end up with way more babies than dull ones.</p>
       </div>
-      <div class="evo-card reveal d2">
-        <div class="evo-num">02</div>
+      <div class="evo-step reveal d2" data-num="02">
         <h3>Bright Genes Spread</h3>
         <p>Bright males have more babies. Their sons inherit the gene and also get more mates. Over generations, bright feathers become more and more common.</p>
       </div>
-      <div class="evo-card reveal d1">
-        <div class="evo-num">03</div>
+      <div class="evo-step reveal d1" data-num="03">
         <h3>Bright = Strong</h3>
         <p>Bright feathers take energy and attract predators. If a male has them and is still alive, he must be strong. Females use brightness as a signal of good genes.</p>
       </div>
-      <div class="evo-card reveal d2">
-        <div class="evo-num">04</div>
+      <div class="evo-step reveal d2" data-num="04">
         <h3>Better Babies</h3>
         <p>Females who picked bright males had healthier chicks. Those chicks inherited the preference. Now the preference for bright males is just as inherited as the feathers.</p>
       </div>
