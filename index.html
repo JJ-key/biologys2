@@ -149,6 +149,23 @@
     .d4 { transition-delay: 0.4s; }
 
 
+    /* ── SECTION PHOTOS ─────────────────── */
+    .section-photo {
+      margin-top: 2rem;
+      border-radius: 14px;
+      overflow: hidden;
+      height: 340px;
+      width: 100%;
+    }
+
+    .section-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+
     /* ══════════════════════════════════
        § 1  HOME
     ══════════════════════════════════ */
@@ -841,7 +858,7 @@
   <!-- Real bird photo fading in from the right -->
   <figure class="hero-photo" aria-hidden="true">
     <img
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Paradisaea_minor.jpg/800px-Paradisaea_minor.jpg"
+      src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Paradisaea_minor.jpg&width=960"
       alt="Male Lesser Bird of Paradise displaying its bright yellow and white plumage"
       loading="eager"
       onerror="this.parentElement.style.display='none'">
@@ -969,6 +986,14 @@
         <p>When MC1R mutates, melanin gets deposited in a new pattern. That pattern causes light to reflect differently — creating the intense, shimmery colors the Bird of Paradise is known for.</p>
       </div>
     </div>
+
+    <figure class="section-photo reveal d4">
+      <img
+        src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Paradisaea_apoda.jpg&width=960"
+        alt="Greater Bird of Paradise male with long golden plumes on display"
+        loading="lazy"
+        onerror="this.closest('figure').style.display='none'">
+    </figure>
 
   </div>
 </section>
@@ -1135,6 +1160,14 @@
       <h2>Female Choice Drives the Spread</h2>
       <p>Bright feathers can get a bird eaten — but females keep choosing them anyway. <strong>More mates = more babies = more birds with the gene.</strong></p>
     </div>
+
+    <figure class="section-photo reveal d2">
+      <img
+        src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Paradisaea_rubra.jpg&width=960"
+        alt="Red Bird of Paradise male showing its vivid red and yellow plumage"
+        loading="lazy"
+        onerror="this.closest('figure').style.display='none'">
+    </figure>
 
     <div class="evo-timeline">
       <div class="evo-step reveal d1" data-num="01">
