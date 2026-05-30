@@ -602,7 +602,25 @@
     /* ══════════════════════════════════
        § 4  EVOLUTION
     ══════════════════════════════════ */
-    #evolution { background: var(--bg2); }
+    #evolution {
+      background-color: var(--bg2);
+      background-image: url('https://wallpaperaccess.com/full/2332371.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    #evolution::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(4, 6, 15, 0.82);
+      pointer-events: none;
+    }
+
+    #evolution .container {
+      position: relative;
+      z-index: 1;
+    }
 
     .evo-timeline {
       position: relative;
