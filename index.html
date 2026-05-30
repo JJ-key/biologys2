@@ -303,24 +303,19 @@
        § 2  GENES
     ══════════════════════════════════ */
     #genes {
-      background-color: var(--bg2);
-      background-image: url('https://www.inpetcare.com/wp-content/uploads/2024/02/Greater-Bird-of-Paradise.jpeg');
-      background-size: cover;
-      background-position: center top;
-    }
-
-    #genes::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        to bottom,
-        #04060f 0%,
-        rgba(4, 6, 15, 0.86) 10%,
-        rgba(4, 6, 15, 0.86) 90%,
-        #04060f 100%
-      );
-      pointer-events: none;
+      background-color: var(--bg);
+      background-image:
+        linear-gradient(
+          to bottom,
+          var(--bg)  0%,
+          rgba(4, 6, 15, 0.88) 18%,
+          rgba(4, 6, 15, 0.88) 82%,
+          var(--bg3) 100%
+        ),
+        url('https://www.inpetcare.com/wp-content/uploads/2024/02/Greater-Bird-of-Paradise.jpeg');
+      background-size: 100% 100%, cover;
+      background-position: top, center top;
+      background-repeat: no-repeat;
     }
 
     #genes .container {
@@ -651,24 +646,19 @@
        § 4  EVOLUTION
     ══════════════════════════════════ */
     #evolution {
-      background-color: var(--bg2);
-      background-image: url('https://wallpaperaccess.com/full/2332371.jpg');
-      background-size: cover;
-      background-position: center;
-    }
-
-    #evolution::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        to bottom,
-        #04060f 0%,
-        rgba(4, 6, 15, 0.82) 10%,
-        rgba(4, 6, 15, 0.82) 90%,
-        #04060f 100%
-      );
-      pointer-events: none;
+      background-color: var(--bg3);
+      background-image:
+        linear-gradient(
+          to bottom,
+          var(--bg3) 0%,
+          rgba(4, 6, 15, 0.84) 18%,
+          rgba(4, 6, 15, 0.84) 82%,
+          var(--bg3) 100%
+        ),
+        url('https://wallpaperaccess.com/full/2332371.jpg');
+      background-size: 100% 100%, cover;
+      background-position: top, center;
+      background-repeat: no-repeat;
     }
 
     #evolution .container {
