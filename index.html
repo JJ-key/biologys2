@@ -302,7 +302,49 @@
     /* ══════════════════════════════════
        § 2  GENES
     ══════════════════════════════════ */
-    #genes { background: var(--bg2); }
+    #genes {
+      background-color: var(--bg2);
+      background-image: url('https://www.inpetcare.com/wp-content/uploads/2024/02/Greater-Bird-of-Paradise.jpeg');
+      background-size: cover;
+      background-position: center top;
+    }
+
+    #genes::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(4, 6, 15, 0.86);
+      pointer-events: none;
+    }
+
+    #genes .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .bright-facts {
+      display: flex;
+      gap: 2rem;
+      margin-top: 1.4rem;
+      flex-wrap: wrap;
+    }
+
+    .bf {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .bf strong {
+      font-size: 1.2rem;
+      color: var(--gold);
+      font-family: 'Lora', serif;
+    }
+
+    .bf span {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
 
     .gene-grid {
       display: grid;
@@ -843,6 +885,7 @@
     /* ── RESPONSIVE ──────────────────── */
     @media (max-width: 768px) {
       .gene-grid { grid-template-columns: 1fr; }
+      .bright-facts { gap: 1.25rem; }
       .evo-timeline { padding-left: 2.75rem; }
       .evo-timeline::before { left: 0.85rem; }
       .fc-head, .fc-body { grid-template-columns: 1fr; }
@@ -1010,17 +1053,23 @@
       <div>
         <h3>Why Are Bird of Paradise Feathers So Bright?</h3>
         <p>When MC1R mutates, melanin gets deposited in a new pattern. That pattern causes light to reflect differently — creating the intense, shimmery colors the Bird of Paradise is known for.</p>
+        <p>The same mutation that makes males beautiful also makes them more visible to predators. Yet the gene kept spreading — because impressing females matters more to evolution than staying hidden.</p>
+        <div class="bright-facts">
+          <div class="bf">
+            <strong>40+</strong>
+            <span>color patterns across species</span>
+          </div>
+          <div class="bf">
+            <strong>1 gene</strong>
+            <span>drives the entire color outcome</span>
+          </div>
+          <div class="bf">
+            <strong>Millions of years</strong>
+            <span>of female preference = extreme brightness</span>
+          </div>
+        </div>
       </div>
     </div>
-
-    <figure class="section-photo reveal d4">
-      <img
-        src="https://www.inpetcare.com/wp-content/uploads/2024/02/Greater-Bird-of-Paradise.jpeg"
-        alt="Greater Bird of Paradise male showing vivid yellow and green plumage"
-        loading="lazy"
-        onerror="this.closest('figure').style.display='none'">
-      <figcaption>Greater Bird of Paradise — photo via InPetCare.com</figcaption>
-    </figure>
 
   </div>
 </section>
